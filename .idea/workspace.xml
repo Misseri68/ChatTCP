@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b102eb5b-37b5-464e-82ce-04be0b287264" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b102eb5b-37b5-464e-82ce-04be0b287264" name="Changes" comment="Added unitary tests for the CSV part. &#10;Many many changes. Need to implement much more, but it's coming together.&#10;Or so I hope.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatTCP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChatTCP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAOs/UserCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSV/UserCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/files/users.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CSV/TestsCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSV/TestsCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CSV/UserCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSV/UserCSV.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DAOs/UserDAO/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAOs/UserDAO/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAOs/UserDAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAOs/UserDAO/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAOs/UserDAO/UserDAO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logica/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/ChatHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logica/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/ChatRoom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logica/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logica/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logica/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestsVarios/TestsCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSV/TestsCSV.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="12905" />
+    <option name="totalTimeSeconds" value="26369" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -41,6 +40,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -76,83 +78,25 @@
       <recent name="C:\Users\Ari\OneDrive\2º DAM\Acceso a Datos\2º term\ChatTCP\src\Logica" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="TestsCSV" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CSV.TestsCSV" />
+  <component name="RunManager" selected="Application.ClienteMultiple">
+    <configuration name="ClienteMultiple" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="Logica.Client" />
       <module name="ChatTCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserCSV" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CSV.UserCSV" />
+    <configuration name="Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Logica.Server" />
       <module name="ChatTCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CSV.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestsCSV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ChatTCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CSV.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CSV" />
-      <option name="MAIN_CLASS_NAME" value="CSV.TestsCSV" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestsCSV.testCreateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ChatTCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CSV.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CSV" />
-      <option name="MAIN_CLASS_NAME" value="CSV.TestsCSV" />
-      <option name="METHOD_NAME" value="testCreateUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestsCSV.testUserExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ChatTCP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CSV.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CSV" />
-      <option name="MAIN_CLASS_NAME" value="CSV.TestsCSV" />
-      <option name="METHOD_NAME" value="testUserExists" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.TestsCSV" />
-        <item itemvalue="JUnit.TestsCSV.testUserExists" />
-        <item itemvalue="JUnit.TestsCSV.testCreateUser" />
-        <item itemvalue="Application.TestsCSV" />
-        <item itemvalue="Application.UserCSV" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.ClienteMultiple" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -166,8 +110,17 @@
       <workItem from="1707294468055" duration="12101000" />
       <workItem from="1707501037380" duration="1947000" />
       <workItem from="1707525297204" duration="7636000" />
-      <workItem from="1707595951719" duration="20383000" />
+      <workItem from="1707595951719" duration="34915000" />
     </task>
+    <task id="LOCAL-00001" summary="Added unitary tests for the CSV part. &#10;Many many changes. Need to implement much more, but it's coming together.&#10;Or so I hope.">
+      <option name="closed" value="true" />
+      <created>1707627737581</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707627737581</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +137,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added unitary tests for the CSV part. &#10;Many many changes. Need to implement much more, but it's coming together.&#10;Or so I hope." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unitary tests for the CSV part. &#10;Many many changes. Need to implement much more, but it's coming together.&#10;Or so I hope." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -198,12 +155,57 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Logica/Client.java</url>
-          <line>47</line>
+          <line>54</line>
           <properties class="Logica.Client" method="receiveMessage">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Logica/ClientHandler.java</url>
+          <line>57</line>
+          <properties class="Logica.ClientHandler" method="run">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Logica/ClientHandler.java</url>
+          <line>244</line>
+          <properties class="Logica.ClientHandler" method="closeConnection">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Logica/ClientHandler.java</url>
+          <line>200</line>
+          <properties class="Logica.ClientHandler" method="createRoom">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/CSV/UserCSV.java</url>
+          <line>101</line>
+          <properties class="CSV.UserCSV" method="changeUsername">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Logica/ClientHandler.java</url>
+          <line>160</line>
+          <properties class="Logica.ClientHandler" method="changeUsername">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

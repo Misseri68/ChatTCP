@@ -3,11 +3,12 @@ package Logica;
 
 import java.io.*;
 import java.net.Socket;
+import java.net.SocketException;
 import java.util.Scanner;
 
 public class Client {
-    private int port = 60000;
-    private String host = "localhost";
+    private int port ;
+    private String host ;
     BufferedReader in ;
     BufferedWriter out ;
 
@@ -22,11 +23,12 @@ public class Client {
                 BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                 BufferedWriter out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
         ) {
-            System.out.println("Client connected.");
+            System.out.println("You've been connected to the server. Welcome!.");
             this.in = in;
             this.out = out;
-            new Thread(this::receiveMessage);
+            new Thread(this::receiveMessage).start();
             sendMessage();
+        }catch (SocketException ignored){
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -40,7 +42,12 @@ public class Client {
         Scanner sc = new Scanner(System.in);
         String message;
         while (out != null) {
-            out.write(sc.nextLine());
+            message = sc.nextLine();
+            out.write(message + "\n");
+            out.flush();
+            if(message.equals("/exit")){
+               throw new SocketException(); //to get to the finally block quickly.
+            }
         }
     }
 
@@ -48,9 +55,12 @@ public class Client {
     public void receiveMessage(){
         String inputLine;
             try {
-                while((inputLine = in.readLine()) != null) {
+                while ((inputLine = in.readLine()) != null) {
+
                     System.out.println(inputLine);
                 }
+            } catch (SocketException ignored){
+
             } catch (IOException e) {
                 e.printStackTrace();
                 System.out.println("There was an error when receiving the message. Try logging in again.");

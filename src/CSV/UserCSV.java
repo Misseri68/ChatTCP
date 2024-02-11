@@ -108,7 +108,7 @@ public class UserCSV {
                 while ((line = br.readLine()) != null) {
                     String[] credentials = line.split(",");
                     if (credentials.length == 2) {
-                        if (credentials[0].equals(username)) {
+                        if (credentials[0].trim().toLowerCase().equals(username.trim().toLowerCase())) {
                             rewrittenCSV.append(newUsername).append(",").append(credentials[1]).append("\n"); //Sobreescribir la linea que se guardará
                         } else rewrittenCSV.append(line).append("\n");
                     }
