@@ -25,7 +25,7 @@ public class ChatHandler {
         return null;
     }
 
-    public void createRoom(ClientHandler client, String name, String pwd){
+    public void createRoom(String name, String pwd){
         try{
             createdRooms.add(new ChatRoom(name, pwd));
         }catch (RoomException e){

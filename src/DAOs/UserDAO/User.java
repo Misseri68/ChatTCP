@@ -1,9 +1,12 @@
 package DAOs.UserDAO;
 
+import Logica.ChatRoom;
+
 public class User {
-    //@Id
+    /*@Id autoincrement... for when I update with a database.
+    Long id_user;*/
     String name ="";
-    String pwd = "";
+    ChatRoom currentChatRoom;
 
     public User(String name) {
         setName(name);
@@ -17,11 +20,11 @@ public class User {
         this.name = name.trim();
     }
 
-    public String getPwd() {
-        return pwd;
+    public ChatRoom getCurrentChatRoom() {
+        return currentChatRoom;
     }
 
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
+    public void setCurrentChatRoom(ChatRoom currentChatRoom) {
+        this.currentChatRoom = currentChatRoom;
     }
 }

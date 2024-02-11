@@ -11,6 +11,8 @@ public class ChatRoom {
 
     private String chatPassword = "";
 
+
+
     /*TODO: Cómo diferencio entre el cliente que ha mandado el mensaje y los demás? Mandando el socket del enviador?
     el que envia el mensaje usaría out., mientras que los que lo reciben sería in., Coger el cliente enviador como
     argumento en metodo sentMessage()?*/

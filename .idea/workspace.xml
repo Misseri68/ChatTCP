@@ -5,75 +5,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b102eb5b-37b5-464e-82ce-04be0b287264" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatTCP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/users.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAOs/UserCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAOs/UserDAO/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DAOs/UserDAO/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Excepciones/RoomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Excepciones/UserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Logica/ChatHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Logica/ChatRoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Logica/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Logica/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Logica/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TestsVarios/TestsCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatTCP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ChatTCP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAOs/UserCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSV/UserCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAOs/UserDAO/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAOs/UserDAO/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAOs/UserDAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAOs/UserDAO/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logica/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/ChatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logica/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/ChatRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logica/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logica/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logica/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestsVarios/TestsCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSV/TestsCSV.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DarkyenusTimeTracker">
+    <option name="totalTimeSeconds" value="12905" />
+    <option name="gitIntegration" value="true" />
+    <option name="naggedAbout" value="1" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2bwm6X8IsZb2DjCAtZphw1raf44" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Ari/OneDrive/2º DAM/Programación de Servicios y Procesos/2nd term/Ejercicios/PSP_2term",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.TestsCSV">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ari\OneDrive\2º DAM\Acceso a Datos\2º term\ChatTCP\src\Logica" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="TestsCSV" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestsVarios.TestsCSV" />
+      <option name="MAIN_CLASS_NAME" value="CSV.TestsCSV" />
       <module name="ChatTCP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="UserCSV" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DAOs.UserCSV" />
+      <option name="MAIN_CLASS_NAME" value="CSV.UserCSV" />
       <module name="ChatTCP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DAOs.*" />
+          <option name="PATTERN" value="CSV.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,8 +97,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestsCSV" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ChatTCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CSV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CSV" />
+      <option name="MAIN_CLASS_NAME" value="CSV.TestsCSV" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsCSV.testCreateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ChatTCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CSV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CSV" />
+      <option name="MAIN_CLASS_NAME" value="CSV.TestsCSV" />
+      <option name="METHOD_NAME" value="testCreateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsCSV.testUserExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ChatTCP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CSV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CSV" />
+      <option name="MAIN_CLASS_NAME" value="CSV.TestsCSV" />
+      <option name="METHOD_NAME" value="testUserExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestsCSV" />
+        <item itemvalue="JUnit.TestsCSV.testUserExists" />
+        <item itemvalue="JUnit.TestsCSV.testCreateUser" />
         <item itemvalue="Application.TestsCSV" />
         <item itemvalue="Application.UserCSV" />
       </list>
@@ -99,21 +165,56 @@
       <workItem from="1707134345698" duration="14989000" />
       <workItem from="1707294468055" duration="12101000" />
       <workItem from="1707501037380" duration="1947000" />
+      <workItem from="1707525297204" duration="7636000" />
+      <workItem from="1707595951719" duration="20383000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/CSV/UserCSV.java</url>
+          <line>21</line>
+          <properties class="CSV.UserCSV" method="userExists">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Logica/Client.java</url>
+          <line>47</line>
+          <properties class="Logica.Client" method="receiveMessage">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="s.split(&quot; &quot;, 2)" />
       </configuration>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/TestsVarios/TestsCSV.java" line="7">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/CSV/TestsCSV.java" line="5">
         <watch expression="s.split(&quot; &quot;, 2).length" />
       </inline-watch>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/TestsVarios/TestsCSV.java" line="7">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/CSV/TestsCSV.java" line="5">
         <watch expression="s.split(&quot; &quot;, 3)" />
       </inline-watch>
     </watches-manager>

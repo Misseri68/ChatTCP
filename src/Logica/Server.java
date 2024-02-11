@@ -1,6 +1,6 @@
 package Logica;
 
-import DAOs.UserCSV;
+import CSV.UserCSV;
 import DAOs.UserDAO.User;
 
 import java.io.IOException;
@@ -11,8 +11,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Server {
-    //TODO lista de clientes conectados???
-    public int puerto = 60000;
+    public int port = 60000;
+    public final int MAX_CLIENTS = 100;
+
     Set<ClientHandler> connectedClients = Collections.synchronizedSet(new HashSet<>());
     ChatHandler chatHandler = new ChatHandler(this);
 
@@ -20,25 +21,28 @@ public class Server {
         return connectedClients;
     }
 
-
     public void launchServer(){
         try(
-                ServerSocket serverSocket = new ServerSocket(puerto);
+                ServerSocket serverSocket = new ServerSocket(port);
         ){
-        while(true){
-            Socket socketCliente = serverSocket.accept();
-            new ClientHandler(socketCliente, this).run();
-            System.out.println("Nuevo conexion con el socket: " + socketCliente.toString());
-        }
-
+            System.out.println("Server initiated. Waiting for clients...");
+            while(connectedClients.size()<MAX_CLIENTS){
+                Socket socketCliente = serverSocket.accept();
+                new Thread(new ClientHandler(socketCliente, this)).start();
+                System.out.println("Client's socket with reference: " + socketCliente + " connected. Waiting authentification...");
+            }
         }catch(IOException e){
             e.printStackTrace();
         }
     }
-
-    public void authorizeClient(ClientHandler ch, String username, String pwd){
-        //if(User)
+    public synchronized boolean isConnected(String clientName){
+        for (ClientHandler clientHandler : connectedClients) {
+            String connectedClientName = clientHandler.getUser().getName().toLowerCase();
+            if (connectedClientName.equals(clientName.toLowerCase().trim())) return true;
+        }
+        return false;
     }
+
 
     public synchronized void addConnectedClient(ClientHandler clientHandler){
         connectedClients.add(clientHandler);
@@ -48,11 +52,8 @@ public class Server {
         connectedClients.remove(clientHandler);
     }
 
-    public synchronized boolean isConnected(String clientName){
-        for (ClientHandler client : connectedClients) {
-            String connectedClientName = client.getCliente().getUser().getName().toLowerCase();
-            if (connectedClientName.equals(clientName.toLowerCase().trim())) return true;
-        }
-        return false;
+
+    public static void main(String[] args) {
+        new Server().launchServer();
     }
 }
