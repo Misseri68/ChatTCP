@@ -7,8 +7,8 @@ import java.net.SocketException;
 import java.util.Scanner;
 
 public class Client {
-    private int port ;
-    private String host ;
+    private final int port ;
+    private final String host ;
     BufferedReader in ;
     BufferedWriter out ;
 

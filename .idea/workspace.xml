@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b102eb5b-37b5-464e-82ce-04be0b287264" name="Changes" comment="Added unitary tests for the CSV part. &#10;Many many changes. Need to implement much more, but it's coming together.&#10;Or so I hope.">
+    <list default="true" id="b102eb5b-37b5-464e-82ce-04be0b287264" name="Changes" comment="After &lt;#DTT#&gt; of rushing the chat, I have a working version of the chat with many commands that work (unless very thorough at looking for bugs). &#10;&#10;Missing: readme, javadoc...&#10;&#10;Started to get serious at 1 am, it's 11 am, I'll rest and hand this in as it is.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/files/users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSV/TestsCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSV/TestsCSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSV/UserCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSV/UserCSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAOs/UserDAO/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAOs/UserDAO/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DAOs/UserDAO/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logica/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/ChatHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logica/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/ChatRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logica/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logica/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logica/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="26369" />
+    <option name="totalTimeSeconds" value="27877" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -37,6 +28,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Misseri68&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3cdc6b0f-098a-43a6-b345-91d58d50ec8e" />
+        <option name="url" value="https://github.com/Misseri68/ChatTCP.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,26 +58,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Ari/OneDrive/2º DAM/Programación de Servicios y Procesos/2nd term/Ejercicios/PSP_2term",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ari/OneDrive/2º DAM/Programación de Servicios y Procesos/2nd term/Ejercicios/PSP_2term&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ari\OneDrive\2º DAM\Acceso a Datos\2º term\ChatTCP\src\Logica" />
@@ -110,7 +119,8 @@
       <workItem from="1707294468055" duration="12101000" />
       <workItem from="1707501037380" duration="1947000" />
       <workItem from="1707525297204" duration="7636000" />
-      <workItem from="1707595951719" duration="34915000" />
+      <workItem from="1707595951719" duration="36622000" />
+      <workItem from="1707648385467" duration="99000" />
     </task>
     <task id="LOCAL-00001" summary="Added unitary tests for the CSV part. &#10;Many many changes. Need to implement much more, but it's coming together.&#10;Or so I hope.">
       <option name="closed" value="true" />
@@ -120,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707627737581</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="After &lt;#DTT#&gt; of rushing the chat, I have a working version of the chat with many commands that work (unless very thorough at looking for bugs). &#10;&#10;Missing: readme, javadoc...&#10;&#10;Started to get serious at 1 am, it's 11 am, I'll rest and hand this in as it is.">
+      <option name="closed" value="true" />
+      <created>1707648238440</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707648238440</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +157,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added unitary tests for the CSV part. &#10;Many many changes. Need to implement much more, but it's coming together.&#10;Or so I hope." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added unitary tests for the CSV part. &#10;Many many changes. Need to implement much more, but it's coming together.&#10;Or so I hope." />
+    <MESSAGE value="After &lt;#DTT#&gt; of rushing the chat, I have a working version of the chat with many commands that work (unless very thorough at looking for bugs). &#10;&#10;Missing: readme, javadoc...&#10;&#10;Started to get serious at 1 am, it's 11 am, I'll rest and hand this in as it is." />
+    <option name="LAST_COMMIT_MESSAGE" value="After &lt;#DTT#&gt; of rushing the chat, I have a working version of the chat with many commands that work (unless very thorough at looking for bugs). &#10;&#10;Missing: readme, javadoc...&#10;&#10;Started to get serious at 1 am, it's 11 am, I'll rest and hand this in as it is." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
