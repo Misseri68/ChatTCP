@@ -113,22 +113,23 @@ public class ClientHandler implements Runnable{
     public void help(){
         sendToClient("Regarding your user:");
         sendToClient("\t /exit to close your session");
-        sendToClient("\t /register");
-        sendToClient("\t /changePassword");
-        sendToClient("\t /changeUsername");
+        sendToClient("\t /register 'name' 'password' 'repeatPassword'");
+        sendToClient("\t /login 'name' 'password'");
+        sendToClient("\t /changePassword 'name' 'password' 'newPassword'");
+        sendToClient("\t /changeUsername 'name' 'newName' 'password' ");
         sendToClient("Regarding rooms:");
-        sendToClient("\t /joinRoom");
-        sendToClient("\t /createRoom");
-        sendToClient("\t /changeRoomName");
-        sendToClient("\t /changeRoomCode");
+        sendToClient("\t /joinRoom 'roomName' 'code (can be none)'");
+        sendToClient("\t /createRoom 'roomName' 'code (can be left blank)'");
+        sendToClient("\t /changeRoomName 'newName' (only if you're inside the room)");
+        sendToClient("\t /changeRoomCode 'newCode' (only if you're inside the room)");
         sendToClient("\t /leaveRoom");
     }
 
     public synchronized void login(String line) throws IOException {
         String[] splitLine = line.split(" ", 3);
         if(splitLine.length>= 3){
-            String name = splitLine[1];
-            String pwd = splitLine[2];
+            String name = splitLine[1].trim();
+            String pwd = splitLine[2].trim();
             if(server.isConnected(name)) sendToClient("The user " + name + " is already logged in.");
             else {
                 boolean auth = UserCSV.authenticate(name, pwd);
@@ -195,11 +196,11 @@ public class ClientHandler implements Runnable{
             if(splitLine.length>=3){
                 roomCode = splitLine[2];
             }
-            chatHandler.joinRoom(this, roomName, roomCode);
+            chatHandler.joinRoom(this, roomName.trim(), roomCode.trim());
         }
     }
     public synchronized void createRoom(String line) {
-        String[] splitLine = line.split(" ", 2);
+        String[] splitLine = line.split(" ", 3);
         if (splitLine.length >= 2) {
             String roomName = splitLine[1];
             String roomCode = "";
@@ -246,12 +247,14 @@ public class ClientHandler implements Runnable{
             try {
                 running = false;
                 server.removeConnectedClient(this);
+                if (user!=null && user.getCurrentChatRoom()!=null) {
+                    chatHandler.leaveRoom(this);
+                    user.setCurrentChatRoom(null);
+                }
                 if(in!=null) in.close();
                 if(out!=null) out.close();
                 if(socket!=null) socket.close();
-                this.setUser(null);
-                chatHandler.leaveRoom(this);
-                user.setCurrentChatRoom(null);
+                if(user!=null)this.setUser(null);
                 System.out.println("Client disconnected successfully.");
             } catch (IOException e) {
                 System.out.println("Error closing connection");

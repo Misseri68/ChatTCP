@@ -83,6 +83,7 @@ public class ChatRoom {
             users.remove(ch);
             if(users.size()==0){
                 chatHandler.removeRoom(this);
+                this.setName(null);
             }
         }
     }

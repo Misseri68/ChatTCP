@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b102eb5b-37b5-464e-82ce-04be0b287264" name="Changes" comment="After &lt;#DTT#&gt; of rushing the chat, I have a working version of the chat with many commands that work (unless very thorough at looking for bugs). &#10;&#10;Missing: readme, javadoc...&#10;&#10;Started to get serious at 1 am, it's 11 am, I'll rest and hand this in as it is.">
+    <list default="true" id="b102eb5b-37b5-464e-82ce-04be0b287264" name="Changes" comment="First draft (CSV with name-pwd implemented)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAOs/UserDAO/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/files/users.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logica/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/ChatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logica/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/ChatRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logica/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logica/ClientHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +124,7 @@
       <workItem from="1707525297204" duration="7636000" />
       <workItem from="1707595951719" duration="36622000" />
       <workItem from="1707648385467" duration="99000" />
+      <workItem from="1707727611290" duration="2369000" />
     </task>
     <task id="LOCAL-00001" summary="Added unitary tests for the CSV part. &#10;Many many changes. Need to implement much more, but it's coming together.&#10;Or so I hope.">
       <option name="closed" value="true" />
@@ -192,7 +196,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Logica/ClientHandler.java</url>
-          <line>244</line>
+          <line>245</line>
           <properties class="Logica.ClientHandler" method="closeConnection">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -201,7 +205,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Logica/ClientHandler.java</url>
-          <line>200</line>
+          <line>201</line>
           <properties class="Logica.ClientHandler" method="createRoom">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -219,12 +223,48 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Logica/ClientHandler.java</url>
-          <line>160</line>
+          <line>161</line>
           <properties class="Logica.ClientHandler" method="changeUsername">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Logica/ChatRoom.java</url>
+          <line>80</line>
+          <properties class="Logica.ChatRoom" method="removeUser">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Logica/ClientHandler.java</url>
+          <line>233</line>
+          <properties class="Logica.ClientHandler" method="leaveRoom">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Logica/ChatHandler.java</url>
+          <line>41</line>
+          <properties class="Logica.ChatHandler" method="removeRoom">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Logica/ChatHandler.java</url>
+          <line>64</line>
+          <properties class="Logica.ChatHandler" method="leaveRoom">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -233,10 +273,10 @@
         <watch expression="s.split(&quot; &quot;, 2)" />
       </configuration>
       <inline-watch fileUrl="file://$PROJECT_DIR$/src/CSV/TestsCSV.java" line="5">
-        <watch expression="s.split(&quot; &quot;, 2).length" />
+        <watch expression="s.split(&quot; &quot;, 3)" />
       </inline-watch>
       <inline-watch fileUrl="file://$PROJECT_DIR$/src/CSV/TestsCSV.java" line="5">
-        <watch expression="s.split(&quot; &quot;, 3)" />
+        <watch expression="s.split(&quot; &quot;, 2).length" />
       </inline-watch>
     </watches-manager>
   </component>

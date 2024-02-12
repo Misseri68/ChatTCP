@@ -33,6 +33,7 @@ public class ChatHandler {
                 ch.sendToClient(created);
                 server.printToServer(created);
             }
+            else ch.sendToClient("The room already exists!");
         } catch (RoomException e) {
             ch.sendToClient(e.getMessage());
         }
